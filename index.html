@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Test task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero-step-one">
+        <h1 class="hero-step-one__title">
+          Calculate the nearest days that will have
+          <span class="hero-step-one__title__span">fatal consequences</span> <br />
+          in your life
+        </h1>
+        <div class="hero-step-one__icons-box">
+          <svg width="57" height="64">
+            <use href="./images/icons.svg#icon-man"></use>
+          </svg>
+          <svg width="60" height="60">
+            <use href="./images/icons.svg#icon-chart"></use>
+          </svg>
+        </div>
+        <p class="hero-step-one__text">Prediction accuracy: up to <span>96</span>%</p>
+        <button class="hero__button hero__button--margin continueButton">Continue</button>
+      </section>
+
+      <section class="hero-step-two" style="display: none">
+        <div class="hero-step-two__wrapper">
+          <h2 class="hero-step-two__title">What's your birthdate?</h2>
+          <div class="hero-step-two__wrapper__date-box-overlay">
+            <div class="hero-step-two__wrapper__date-box">
+              <h3 class="hero-step-two__wrapper__date-box__title">Day</h3>
+              <svg width="10" height="5">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="hero-step-two__wrapper__date-box">
+              <h3 class="hero-step-two__wrapper__date-box__title">Month</h3>
+              <svg width="10" height="5">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div class="hero-step-two__wrapper__date-box">
+              <h3 class="hero-step-two__wrapper__date-box__title">Year</h3>
+              <svg width="10" height="5">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="hero-step-two__wrapper">
+          <h2 class="hero-step-two__title">What's your birthplace?</h2>
+          <div class="hero-step-two__wrapper__date-box hero-step-two__wrapper__date-box--gap">
+            <h3 class="hero-step-two__wrapper__date-box__title">Enter your town/city</h3>
+            <svg width="10" height="5">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </div>
+          <div class="hero-step-two__wrapper__bottom">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-circle"></use>
+            </svg>
+            <p class="hero-step-two__wrapper__bottom__text">I don't know</p>
+          </div>
+        </div>
+        <button class="hero__button hero__button--margin continueButton">Continue</button>
+      </section>
+
+      <section class="hero-step-three" style="display: none">
+        <h2 class="hero-step-three__title">Calculating...</h2>
+        <div class="hero-step-three__loader__box">
+          <div class="hero-step-three__loader__box--filled"></div>
+          <p><span>25</span>%</p>
+        </div>
+        <div class="hero-step-three__text__box hero-step-three__box--margin">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <p class="hero-step-three__text">Defining negative periods</p>
+        </div>
+        <div class="hero-step-three__text__box">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-circle"></use>
+          </svg>
+          <p class="hero-step-three__text">Anazyling most insecure spheres</p>
+        </div>
+          <button class="hero__button continueButton">Continue</button>
+      </section>
+
+      <section class="hero-step-four" style="display: none">
+        <h2 class="hero-step-three__title">Calculating...</h2>
+        <img class="hero-step-three__image" src="./images/loader100.webp" alt="Loader" />
+        <div class="hero-step-three__text__box hero-step-three__box--margin">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <p class="hero-step-three__text">Defining negative periods</p>
+        </div>
+        <div class="hero-step-three__text__box hero-step-three__box--margin">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <p class="hero-step-three__text">Anazyling most insecure spheres</p>
+        </div>
+        <div class="hero-step-three__text__box">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <p class="hero-step-three__text">Your personal calendar is generated</p>
+        </div>
+        <button class="hero-step-four__button continueButton">You will have a very rough month</button>
+      </section>
+
+      <section class="hero-step-five" style="display: none">
+        <div class="hero-step-five__image-box">
+          <p class="hero-step-five__image-box-text hero-step-five__image-box-text--first">
+            relationship issues
+          </p>
+          <p class="hero-step-five__image-box-text hero-step-five__image-box-text--second">
+            money issues
+          </p>
+          <p class="hero-step-five__image-box-text hero-step-five__image-box-text--third">
+            health issues
+          </p>
+          <img src="./images/calendar.webp" width="100%" height="auto" alt="Calendar" />
+        </div>
+        <p class="hero-step-five__text">
+          There's a way to avoid problems on negative days. Press the button and send SMS to learn
+          how
+        </p>
+        <button class="hero__button continueButton">Continue</button>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
