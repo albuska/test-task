@@ -22,9 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  function openSMSApp() {
-    const phoneNumber = '1234';
-    const message = 'TEST';
-    window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
-  }
+    function openSMSApp() {
+        const phoneNumber = '1234';
+        const message = 'TEST';
+
+        if (navigator.canShare && navigator.canShare({ url: '', text: '' })) {
+            alert('Будь ласка, відкрийте додаток на своєму телефоні для надсилання SMS.');
+        } else {
+            window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+        }
+    }
 });
