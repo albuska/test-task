@@ -64,14 +64,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  //   function openSMSApp() {
+  //     const phoneNumber = '1234';
+  //     const message = 'TEST';
+
+  //     window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+  //   }
+
   function openSMSApp() {
     const phoneNumber = '1234';
     const message = 'TEST';
 
-    if (navigator.canShare && navigator.canShare({ url: '', text: '' })) {
-      alert('Будь ласка, відкрийте додаток на своєму телефоні для надсилання SMS.');
-    } else {
+    try {
       window.location.href = `sms:${phoneNumber}?body=${encodeURIComponent(message)}`;
+    } catch (e) {
+      alert('Не вдалося відкрити додаток для надсилання SMS. Будь ласка, відкрийте його вручну.');
     }
   }
 });
