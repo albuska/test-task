@@ -221,25 +221,35 @@ body {
     position: relative;
     margin: 0 auto;
     margin-bottom: 32px;
-    width: 124px;
-    height: 124px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 5px solid rgba(252, 124, 60, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 414px) {
+        width: 124px;
+        height: 124px;
+    }
 }
 
 .hero-step-three__loader__box--filled {
     position: absolute;
     top: -4px;
     left: -5px;
-    width: 124px;
-    height: 124px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 5px solid var(--accent-color);
     clip-path: polygon(50% 50%, 100% 0%, 100% 101%, 50% 50%, 0% 25%);
     transform: rotate(-46deg);
+
+    @media (min-width: 414px) {
+        width: 124px;
+        height: 124px;
+    }
 }
 
 .hero-step-three__loader__box--filled-four {
